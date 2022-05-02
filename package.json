@@ -1,5 +1,5 @@
 {
-  "name": "introhbs",
+  "name": "asm2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3",
-    "hbs": "^4.2.0"
+    "express": "^4.18.0",
+    "hbs": "^4.2.0",
+    "mogoose": "^0.0.1-security",
+    "mongodb": "^4.5.0"
   }
 }

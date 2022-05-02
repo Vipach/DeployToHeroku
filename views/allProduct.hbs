@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <title>All products</title>
+   
+</head>
+<body>
+    <h2>{{username}}</h2>
+   <form method="POST" action="/search">
+        <p>Name: </p>
+        <input type="text" name="txtName">
+        <input type="submit" value="Search">
+   </form>
+   <table class="table table-hover content-table">
+       <thead>
+           <tr>
+               <th>Name</th>
+               <th>Price</th>
+               <th>Delete</th>
+           </tr>
+       </thead>
+       <tbody>
+           {{#each model}}
+           <tr>
+                <td>{{name}}</td>
+                <td>{{price}}</td>
+                <td><a href="/delete?id={{_id}}" onclick="return confirm('Are you sure')">Delete</a></td>
+            </tr>
+            {{/each}}
+       </tbody>      
+   </table>
+    <a href="/">Go HomePage</a>
+    <br>
+
+    <a href="/insert">Go Insert Page</a>
+    <br>
+    <a href="/view">Load all products</a>
+</body>
+</html>

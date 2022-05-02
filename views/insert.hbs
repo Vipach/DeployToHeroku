@@ -7,15 +7,25 @@
     <title>New Product</title>
 </head>
 <body>
-    <h1>New Product</h1>
-    <form action="/new" method="post">
-        Id <input type="text" name="txtId" id="">
-        <br>
-        Name <input type="text" name="txtName" id="">
-        <br>
-        Price <input type="text" name="txtPrice" id="">
-        <br>
-        <input type="submit" value="Save">
+    <h1>Insert Page</h1>
+    <form action="/doInsert" method="post">
+    <table>
+        <tr>
+            <td>Name :</td>
+            <td><input class="input1" type="text" name="txtName"></td>
+        </tr>
+        <tr>
+            <td>Price :</td>
+            <td><input class="input1" type="text" name="txtPrice"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input class="input1" type="submit" value="Insert"></td>
+        </tr>
+    </table>
+    
+     <p>Go to HomePage: <a href="/">Link</a>  </p> 
+     <p>View all product: <a href="/view">Link</a>  </p>
     </form>
 </body>
 </html>
